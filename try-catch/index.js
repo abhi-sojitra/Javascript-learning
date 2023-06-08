@@ -9,13 +9,12 @@ function getCurrentDays() {
       document.getElementById("total_days").innerHTML = calculate_days;
       console.log("currentAge", currentAge);
     }
-  } catch (err) {
-    document.getElementById("total_days").innerHTML = "0";
-    message.innerHTML = "IMPORTANT " + err;
+  } catch (error) {
+    console.log(error);
   }
 }
 
-/** Global Scope */
+/** Global Scope */``
 let total_students = 2500;
 
 function blockScope() {
@@ -76,3 +75,10 @@ console.log(myCar.age());
 /** Arrow Function */
 let defaultArrowFunction = (a, b) => a * b;
 console.log("🚀 ~ file: index.js:77 ~ defaultArrowFunction:", defaultArrowFunction(a,b))
+
+// setTimeout(() => {
+// }, 5000);
+
+// setInterval(() => {
+//   console.log('RUn Set timeout');
+// }, 1000);
